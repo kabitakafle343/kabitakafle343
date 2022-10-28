@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation of bounchingball</title>
+    <style>
+        div{
+        
+            height:100vh;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            background-color:goldenrod;
+        }
+        div ul{
+            display:flex;
+            border-bottom: 10px solid black;
+        }
+        div ul li{
+            width:50px;
+    
+            height: 50px;
+            background-color: black;
+            list-style: none;
+            margin: 0px 20px;
+            border-radius: 60%;
+            animation: bouncy .6s linear  infinite;
+
+
+
+        }
+      @keyframes bouncy {
+          0%{
+              transform: translateY(0);
+         
+            }
+            50%{
+              transform:translateY(-150px);  
+            }
+            100%{
+                transform:translateY(0);
+            }
+      }  
+      ul li:nth-child(1){
+          animation-delay: 0.2s;
+          background-color: blue;
+
+      }
+ul li:nth-child(2){
+    animation-delay: 0.3s;
+   background-color: chartreuse;
+
+}
+ul li:nth-child(3){
+    animation-delay: 0.5s;
+   background-color:cornflowerblue;
+
+}
+ul li:nth-child(4){
+    animation-delay: 0.4s;
+   background-color: black;
+
+}
+       
+    </style>
+</head>
+<body>
+    <Div>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+
+
+
+        </ul>
+    </Div>
+</body>
+</html>
